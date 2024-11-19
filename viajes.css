@@ -1,0 +1,93 @@
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 90%;
+    padding: 15px 5%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999;
+}
+header span{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+header nav{
+    gap: 50px;
+}
+.secciones{
+    display: flex;
+}
+.secciones a{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    font-size: 18px;
+}
+.destino{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 5%;
+    width: 50%;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.411);
+
+}
+.destino h1{
+    font-size: 70px;
+    margin: 0;
+}
+.destino p{
+    font-size: 20px;
+}
+.slides{
+    position: relative;
+}
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.slide video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.botones{
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    right: 0px;
+    
+}
+.botones button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #EEEEEE;
+    background-color: white;
+}
+
+.botones>button>span{
+    font-size: 30px;
+}
+.active{
+    z-index: 9;
+}
